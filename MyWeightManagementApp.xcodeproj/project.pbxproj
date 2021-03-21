@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9087BEB52606D0C70028FB61 /* MyWeightManagementAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9087BEB42606D0C70028FB61 /* MyWeightManagementAppApp.swift */; };
+		9087BEB72606D0C70028FB61 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9087BEB62606D0C70028FB61 /* ContentView.swift */; };
+		9087BEB92606D0CA0028FB61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9087BEB82606D0CA0028FB61 /* Assets.xcassets */; };
+		9087BEBC2606D0CA0028FB61 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9087BEBB2606D0CA0028FB61 /* Preview Assets.xcassets */; };
+		9087BEBE2606D0CA0028FB61 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9087BEBD2606D0CA0028FB61 /* Persistence.swift */; };
+		9087BEC12606D0CA0028FB61 /* MyWeightManagementApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9087BEBF2606D0CA0028FB61 /* MyWeightManagementApp.xcdatamodeld */; };
+		9087BECC2606D0CB0028FB61 /* MyWeightManagementAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9087BECB2606D0CB0028FB61 /* MyWeightManagementAppTests.swift */; };
+		9087BED72606D0CB0028FB61 /* MyWeightManagementAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9087BED62606D0CB0028FB61 /* MyWeightManagementAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9087BEC82606D0CB0028FB61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9087BEA92606D0C70028FB61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9087BEB02606D0C70028FB61;
+			remoteInfo = MyWeightManagementApp;
+		};
+		9087BED32606D0CB0028FB61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9087BEA92606D0C70028FB61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9087BEB02606D0C70028FB61;
+			remoteInfo = MyWeightManagementApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9087BEB12606D0C70028FB61 /* MyWeightManagementApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWeightManagementApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9087BEB42606D0C70028FB61 /* MyWeightManagementAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWeightManagementAppApp.swift; sourceTree = "<group>"; };
+		9087BEB62606D0C70028FB61 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9087BEB82606D0CA0028FB61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9087BEBB2606D0CA0028FB61 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9087BEBD2606D0CA0028FB61 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		9087BEC02606D0CA0028FB61 /* MyWeightManagementApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyWeightManagementApp.xcdatamodel; sourceTree = "<group>"; };
+		9087BEC22606D0CA0028FB61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9087BEC72606D0CB0028FB61 /* MyWeightManagementAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyWeightManagementAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9087BECB2606D0CB0028FB61 /* MyWeightManagementAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWeightManagementAppTests.swift; sourceTree = "<group>"; };
+		9087BECD2606D0CB0028FB61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9087BED22606D0CB0028FB61 /* MyWeightManagementAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyWeightManagementAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9087BED62606D0CB0028FB61 /* MyWeightManagementAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWeightManagementAppUITests.swift; sourceTree = "<group>"; };
+		9087BED82606D0CB0028FB61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9087BEAE2606D0C70028FB61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9087BEC42606D0CB0028FB61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9087BECF2606D0CB0028FB61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9087BEA82606D0C70028FB61 = {
+			isa = PBXGroup;
+			children = (
+				9087BEB32606D0C70028FB61 /* MyWeightManagementApp */,
+				9087BECA2606D0CB0028FB61 /* MyWeightManagementAppTests */,
+				9087BED52606D0CB0028FB61 /* MyWeightManagementAppUITests */,
+				9087BEB22606D0C70028FB61 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9087BEB22606D0C70028FB61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9087BEB12606D0C70028FB61 /* MyWeightManagementApp.app */,
+				9087BEC72606D0CB0028FB61 /* MyWeightManagementAppTests.xctest */,
+				9087BED22606D0CB0028FB61 /* MyWeightManagementAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9087BEB32606D0C70028FB61 /* MyWeightManagementApp */ = {
+			isa = PBXGroup;
+			children = (
+				9087BEB42606D0C70028FB61 /* MyWeightManagementAppApp.swift */,
+				9087BEB62606D0C70028FB61 /* ContentView.swift */,
+				9087BEB82606D0CA0028FB61 /* Assets.xcassets */,
+				9087BEBD2606D0CA0028FB61 /* Persistence.swift */,
+				9087BEC22606D0CA0028FB61 /* Info.plist */,
+				9087BEBF2606D0CA0028FB61 /* MyWeightManagementApp.xcdatamodeld */,
+				9087BEBA2606D0CA0028FB61 /* Preview Content */,
+			);
+			path = MyWeightManagementApp;
+			sourceTree = "<group>";
+		};
+		9087BEBA2606D0CA0028FB61 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9087BEBB2606D0CA0028FB61 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9087BECA2606D0CB0028FB61 /* MyWeightManagementAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				9087BECB2606D0CB0028FB61 /* MyWeightManagementAppTests.swift */,
+				9087BECD2606D0CB0028FB61 /* Info.plist */,
+			);
+			path = MyWeightManagementAppTests;
+			sourceTree = "<group>";
+		};
+		9087BED52606D0CB0028FB61 /* MyWeightManagementAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9087BED62606D0CB0028FB61 /* MyWeightManagementAppUITests.swift */,
+				9087BED82606D0CB0028FB61 /* Info.plist */,
+			);
+			path = MyWeightManagementAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9087BEB02606D0C70028FB61 /* MyWeightManagementApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9087BEDB2606D0CB0028FB61 /* Build configuration list for PBXNativeTarget "MyWeightManagementApp" */;
+			buildPhases = (
+				9087BEAD2606D0C70028FB61 /* Sources */,
+				9087BEAE2606D0C70028FB61 /* Frameworks */,
+				9087BEAF2606D0C70028FB61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyWeightManagementApp;
+			productName = MyWeightManagementApp;
+			productReference = 9087BEB12606D0C70028FB61 /* MyWeightManagementApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9087BEC62606D0CB0028FB61 /* MyWeightManagementAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9087BEDE2606D0CB0028FB61 /* Build configuration list for PBXNativeTarget "MyWeightManagementAppTests" */;
+			buildPhases = (
+				9087BEC32606D0CB0028FB61 /* Sources */,
+				9087BEC42606D0CB0028FB61 /* Frameworks */,
+				9087BEC52606D0CB0028FB61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9087BEC92606D0CB0028FB61 /* PBXTargetDependency */,
+			);
+			name = MyWeightManagementAppTests;
+			productName = MyWeightManagementAppTests;
+			productReference = 9087BEC72606D0CB0028FB61 /* MyWeightManagementAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9087BED12606D0CB0028FB61 /* MyWeightManagementAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9087BEE12606D0CB0028FB61 /* Build configuration list for PBXNativeTarget "MyWeightManagementAppUITests" */;
+			buildPhases = (
+				9087BECE2606D0CB0028FB61 /* Sources */,
+				9087BECF2606D0CB0028FB61 /* Frameworks */,
+				9087BED02606D0CB0028FB61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9087BED42606D0CB0028FB61 /* PBXTargetDependency */,
+			);
+			name = MyWeightManagementAppUITests;
+			productName = MyWeightManagementAppUITests;
+			productReference = 9087BED22606D0CB0028FB61 /* MyWeightManagementAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9087BEA92606D0C70028FB61 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					9087BEB02606D0C70028FB61 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					9087BEC62606D0CB0028FB61 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 9087BEB02606D0C70028FB61;
+					};
+					9087BED12606D0CB0028FB61 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 9087BEB02606D0C70028FB61;
+					};
+				};
+			};
+			buildConfigurationList = 9087BEAC2606D0C70028FB61 /* Build configuration list for PBXProject "MyWeightManagementApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9087BEA82606D0C70028FB61;
+			productRefGroup = 9087BEB22606D0C70028FB61 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9087BEB02606D0C70028FB61 /* MyWeightManagementApp */,
+				9087BEC62606D0CB0028FB61 /* MyWeightManagementAppTests */,
+				9087BED12606D0CB0028FB61 /* MyWeightManagementAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9087BEAF2606D0C70028FB61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9087BEBC2606D0CA0028FB61 /* Preview Assets.xcassets in Resources */,
+				9087BEB92606D0CA0028FB61 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9087BEC52606D0CB0028FB61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9087BED02606D0CB0028FB61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9087BEAD2606D0C70028FB61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9087BEBE2606D0CA0028FB61 /* Persistence.swift in Sources */,
+				9087BEB72606D0C70028FB61 /* ContentView.swift in Sources */,
+				9087BEC12606D0CA0028FB61 /* MyWeightManagementApp.xcdatamodeld in Sources */,
+				9087BEB52606D0C70028FB61 /* MyWeightManagementAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9087BEC32606D0CB0028FB61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9087BECC2606D0CB0028FB61 /* MyWeightManagementAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9087BECE2606D0CB0028FB61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9087BED72606D0CB0028FB61 /* MyWeightManagementAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9087BEC92606D0CB0028FB61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9087BEB02606D0C70028FB61 /* MyWeightManagementApp */;
+			targetProxy = 9087BEC82606D0CB0028FB61 /* PBXContainerItemProxy */;
+		};
+		9087BED42606D0CB0028FB61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9087BEB02606D0C70028FB61 /* MyWeightManagementApp */;
+			targetProxy = 9087BED32606D0CB0028FB61 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9087BED92606D0CB0028FB61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9087BEDA2606D0CB0028FB61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9087BEDC2606D0CB0028FB61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MyWeightManagementApp/Preview Content\"";
+				DEVELOPMENT_TEAM = K5F47ABUGN;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MyWeightManagementApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MyWeightManagementApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9087BEDD2606D0CB0028FB61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MyWeightManagementApp/Preview Content\"";
+				DEVELOPMENT_TEAM = K5F47ABUGN;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MyWeightManagementApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MyWeightManagementApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9087BEDF2606D0CB0028FB61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K5F47ABUGN;
+				INFOPLIST_FILE = MyWeightManagementAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MyWeightManagementAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyWeightManagementApp.app/MyWeightManagementApp";
+			};
+			name = Debug;
+		};
+		9087BEE02606D0CB0028FB61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K5F47ABUGN;
+				INFOPLIST_FILE = MyWeightManagementAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MyWeightManagementAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyWeightManagementApp.app/MyWeightManagementApp";
+			};
+			name = Release;
+		};
+		9087BEE22606D0CB0028FB61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K5F47ABUGN;
+				INFOPLIST_FILE = MyWeightManagementAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MyWeightManagementAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyWeightManagementApp;
+			};
+			name = Debug;
+		};
+		9087BEE32606D0CB0028FB61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K5F47ABUGN;
+				INFOPLIST_FILE = MyWeightManagementAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MyWeightManagementAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyWeightManagementApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9087BEAC2606D0C70028FB61 /* Build configuration list for PBXProject "MyWeightManagementApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9087BED92606D0CB0028FB61 /* Debug */,
+				9087BEDA2606D0CB0028FB61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9087BEDB2606D0CB0028FB61 /* Build configuration list for PBXNativeTarget "MyWeightManagementApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9087BEDC2606D0CB0028FB61 /* Debug */,
+				9087BEDD2606D0CB0028FB61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9087BEDE2606D0CB0028FB61 /* Build configuration list for PBXNativeTarget "MyWeightManagementAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9087BEDF2606D0CB0028FB61 /* Debug */,
+				9087BEE02606D0CB0028FB61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9087BEE12606D0CB0028FB61 /* Build configuration list for PBXNativeTarget "MyWeightManagementAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9087BEE22606D0CB0028FB61 /* Debug */,
+				9087BEE32606D0CB0028FB61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9087BEBF2606D0CA0028FB61 /* MyWeightManagementApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9087BEC02606D0CA0028FB61 /* MyWeightManagementApp.xcdatamodel */,
+			);
+			currentVersion = 9087BEC02606D0CA0028FB61 /* MyWeightManagementApp.xcdatamodel */;
+			path = MyWeightManagementApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9087BEA92606D0C70028FB61 /* Project object */;
+}
