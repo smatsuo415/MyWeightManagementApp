@@ -7,6 +7,7 @@
 
 import SwiftUI
 import CoreData
+import Charts
 
 struct UserListsView: View, Identifiable{
     var id: Int
@@ -81,6 +82,9 @@ struct WeightManagementView: View {
                 }
                 else {
                     Text("グラフ表示")
+                    
+                    LineChart()
+                 
                 }
             }
 
@@ -157,6 +161,21 @@ struct WeightManagementView: View {
         
         try? viewContext.save()
     }
+}
+
+struct LineChart : UIViewRepresentable {
+    
+    typealias UIViewType = LineChartView
+ 
+    func makeUIView(context: Context) -> LineChartView {
+        let lineChartView = LineChartView()
+        return lineChartView
+    }
+    
+    func updateUIView(_ uiView: LineChartView, context: Context) {
+ 
+    }
+ 
 }
 
 struct ContentView: View {

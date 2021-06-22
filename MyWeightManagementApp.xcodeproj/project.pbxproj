@@ -15,6 +15,9 @@
 		9087BEC12606D0CA0028FB61 /* MyWeightManagementApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9087BEBF2606D0CA0028FB61 /* MyWeightManagementApp.xcdatamodeld */; };
 		9087BECC2606D0CB0028FB61 /* MyWeightManagementAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9087BECB2606D0CB0028FB61 /* MyWeightManagementAppTests.swift */; };
 		9087BED72606D0CB0028FB61 /* MyWeightManagementAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9087BED62606D0CB0028FB61 /* MyWeightManagementAppUITests.swift */; };
+		A05E3396867187059421AB3A /* Pods_MyWeightManagementApp_MyWeightManagementAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F9487BA014E68D3DEE6B1E /* Pods_MyWeightManagementApp_MyWeightManagementAppUITests.framework */; };
+		B3EB7C16CFE0557B320F252F /* Pods_MyWeightManagementApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5017E440EFAA5722DF2728E6 /* Pods_MyWeightManagementApp.framework */; };
+		C8D76645B8732267AFED7FDC /* Pods_MyWeightManagementAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC3ABEB3F43176A01FD9940A /* Pods_MyWeightManagementAppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0190088DA2D3D19AED630B8C /* Pods-MyWeightManagementApp-MyWeightManagementAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWeightManagementApp-MyWeightManagementAppUITests.release.xcconfig"; path = "Target Support Files/Pods-MyWeightManagementApp-MyWeightManagementAppUITests/Pods-MyWeightManagementApp-MyWeightManagementAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		03028F2184325BD72D29D15B /* Pods-MyWeightManagementAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWeightManagementAppTests.release.xcconfig"; path = "Target Support Files/Pods-MyWeightManagementAppTests/Pods-MyWeightManagementAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		0DC60353660504591C3657B0 /* Pods-MyWeightManagementAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWeightManagementAppTests.debug.xcconfig"; path = "Target Support Files/Pods-MyWeightManagementAppTests/Pods-MyWeightManagementAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		186203C171BBDB3359E276A1 /* Pods-MyWeightManagementApp-MyWeightManagementAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWeightManagementApp-MyWeightManagementAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-MyWeightManagementApp-MyWeightManagementAppUITests/Pods-MyWeightManagementApp-MyWeightManagementAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5017E440EFAA5722DF2728E6 /* Pods_MyWeightManagementApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyWeightManagementApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83F9487BA014E68D3DEE6B1E /* Pods_MyWeightManagementApp_MyWeightManagementAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyWeightManagementApp_MyWeightManagementAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ADD0827D60B054261DDCAD5 /* Pods-MyWeightManagementApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWeightManagementApp.release.xcconfig"; path = "Target Support Files/Pods-MyWeightManagementApp/Pods-MyWeightManagementApp.release.xcconfig"; sourceTree = "<group>"; };
 		9087BEB12606D0C70028FB61 /* MyWeightManagementApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWeightManagementApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9087BEB42606D0C70028FB61 /* MyWeightManagementAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWeightManagementAppApp.swift; sourceTree = "<group>"; };
 		9087BEB62606D0C70028FB61 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,6 +59,8 @@
 		9087BED22606D0CB0028FB61 /* MyWeightManagementAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyWeightManagementAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9087BED62606D0CB0028FB61 /* MyWeightManagementAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWeightManagementAppUITests.swift; sourceTree = "<group>"; };
 		9087BED82606D0CB0028FB61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC3ABEB3F43176A01FD9940A /* Pods_MyWeightManagementAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyWeightManagementAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED53B7BEA4B1513D25C6B86C /* Pods-MyWeightManagementApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWeightManagementApp.debug.xcconfig"; path = "Target Support Files/Pods-MyWeightManagementApp/Pods-MyWeightManagementApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3EB7C16CFE0557B320F252F /* Pods_MyWeightManagementApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8D76645B8732267AFED7FDC /* Pods_MyWeightManagementAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A05E3396867187059421AB3A /* Pods_MyWeightManagementApp_MyWeightManagementAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A9B7405A5B64CEB38CED81B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED53B7BEA4B1513D25C6B86C /* Pods-MyWeightManagementApp.debug.xcconfig */,
+				8ADD0827D60B054261DDCAD5 /* Pods-MyWeightManagementApp.release.xcconfig */,
+				186203C171BBDB3359E276A1 /* Pods-MyWeightManagementApp-MyWeightManagementAppUITests.debug.xcconfig */,
+				0190088DA2D3D19AED630B8C /* Pods-MyWeightManagementApp-MyWeightManagementAppUITests.release.xcconfig */,
+				0DC60353660504591C3657B0 /* Pods-MyWeightManagementAppTests.debug.xcconfig */,
+				03028F2184325BD72D29D15B /* Pods-MyWeightManagementAppTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9087BEA82606D0C70028FB61 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +112,8 @@
 				9087BECA2606D0CB0028FB61 /* MyWeightManagementAppTests */,
 				9087BED52606D0CB0028FB61 /* MyWeightManagementAppUITests */,
 				9087BEB22606D0C70028FB61 /* Products */,
+				6A9B7405A5B64CEB38CED81B /* Pods */,
+				C1C8932E1BCC17923414B71F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,6 +167,16 @@
 			path = MyWeightManagementAppUITests;
 			sourceTree = "<group>";
 		};
+		C1C8932E1BCC17923414B71F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5017E440EFAA5722DF2728E6 /* Pods_MyWeightManagementApp.framework */,
+				83F9487BA014E68D3DEE6B1E /* Pods_MyWeightManagementApp_MyWeightManagementAppUITests.framework */,
+				DC3ABEB3F43176A01FD9940A /* Pods_MyWeightManagementAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9087BEDB2606D0CB0028FB61 /* Build configuration list for PBXNativeTarget "MyWeightManagementApp" */;
 			buildPhases = (
+				58A3E7D23D4059386F544807 /* [CP] Check Pods Manifest.lock */,
 				9087BEAD2606D0C70028FB61 /* Sources */,
 				9087BEAE2606D0C70028FB61 /* Frameworks */,
 				9087BEAF2606D0C70028FB61 /* Resources */,
+				935C2A1C40F599E589C9402A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +203,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9087BEDE2606D0CB0028FB61 /* Build configuration list for PBXNativeTarget "MyWeightManagementAppTests" */;
 			buildPhases = (
+				E820A90D6E8E0DCE809B7DA9 /* [CP] Check Pods Manifest.lock */,
 				9087BEC32606D0CB0028FB61 /* Sources */,
 				9087BEC42606D0CB0028FB61 /* Frameworks */,
 				9087BEC52606D0CB0028FB61 /* Resources */,
@@ -178,9 +222,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9087BEE12606D0CB0028FB61 /* Build configuration list for PBXNativeTarget "MyWeightManagementAppUITests" */;
 			buildPhases = (
+				7FB5E7F5ABF416697BD1F346 /* [CP] Check Pods Manifest.lock */,
 				9087BECE2606D0CB0028FB61 /* Sources */,
 				9087BECF2606D0CB0028FB61 /* Frameworks */,
 				9087BED02606D0CB0028FB61 /* Resources */,
+				50B4C6EC321F2C5105AC1376 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,6 +305,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		50B4C6EC321F2C5105AC1376 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyWeightManagementApp-MyWeightManagementAppUITests/Pods-MyWeightManagementApp-MyWeightManagementAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyWeightManagementApp-MyWeightManagementAppUITests/Pods-MyWeightManagementApp-MyWeightManagementAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyWeightManagementApp-MyWeightManagementAppUITests/Pods-MyWeightManagementApp-MyWeightManagementAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58A3E7D23D4059386F544807 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyWeightManagementApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FB5E7F5ABF416697BD1F346 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyWeightManagementApp-MyWeightManagementAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		935C2A1C40F599E589C9402A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyWeightManagementApp/Pods-MyWeightManagementApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyWeightManagementApp/Pods-MyWeightManagementApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyWeightManagementApp/Pods-MyWeightManagementApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E820A90D6E8E0DCE809B7DA9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyWeightManagementAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9087BEAD2606D0C70028FB61 /* Sources */ = {
@@ -422,6 +571,7 @@
 		};
 		9087BEDC2606D0CB0028FB61 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED53B7BEA4B1513D25C6B86C /* Pods-MyWeightManagementApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -444,6 +594,7 @@
 		};
 		9087BEDD2606D0CB0028FB61 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8ADD0827D60B054261DDCAD5 /* Pods-MyWeightManagementApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -466,6 +617,7 @@
 		};
 		9087BEDF2606D0CB0028FB61 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DC60353660504591C3657B0 /* Pods-MyWeightManagementAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +640,7 @@
 		};
 		9087BEE02606D0CB0028FB61 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03028F2184325BD72D29D15B /* Pods-MyWeightManagementAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +663,7 @@
 		};
 		9087BEE22606D0CB0028FB61 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 186203C171BBDB3359E276A1 /* Pods-MyWeightManagementApp-MyWeightManagementAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +684,7 @@
 		};
 		9087BEE32606D0CB0028FB61 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0190088DA2D3D19AED630B8C /* Pods-MyWeightManagementApp-MyWeightManagementAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
