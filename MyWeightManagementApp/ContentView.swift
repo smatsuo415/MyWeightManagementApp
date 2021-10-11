@@ -35,14 +35,7 @@ struct WeightManagementView: View {
     @State var val: Date = Date()
     @State var sWeight: String = ""
     @State var graphFlag: Bool = true
-
-    struct UserData :Identifiable{
-        var id: Int
-        var name: String = ""
-        var date: Date = Date()
-        var weight: String = ""
-    }
-    @State var userDataList:[UserData] = []
+    @State var update : Bool = true
     
     /// データ取得処理
     @FetchRequest(
@@ -83,7 +76,7 @@ struct WeightManagementView: View {
                 else {
                     Text("グラフ表示")
                     
-                    LineChart()
+                    LineChart().frame(height:500, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                  
                 }
             }
@@ -96,21 +89,21 @@ struct WeightManagementView: View {
             .padding(10)
             
             // デバッグ用 items全削除ボタン
-//            Button(action: {
-//                for item in items {
-//                    viewContext.delete(item)
-//                }
-//
-//                try? viewContext.save()
-//            },
-//                label: {
-//                    Text("消去")
-//                        .font(.largeTitle)
-//                        .background(Color.blue)
-//                        .foregroundColor(Color.white)
-//                        .padding(5)
-//                }
-//            )
+            Button(action: {
+                for item in items {
+                    viewContext.delete(item)
+                }
+
+                try? viewContext.save()
+            },
+                label: {
+                    Text("消去")
+                        .font(.largeTitle)
+                        .background(Color.blue)
+                        .foregroundColor(Color.white)
+                        .padding(5)
+                }
+            )
                 
             Divider()
             
@@ -122,7 +115,7 @@ struct WeightManagementView: View {
                 Text("体重：")
                 TextField("weight", text: Binding(
                             get: {sWeight},
-                            set: {sWeight = $0.filter{"0123456789".contains($0)}}))
+                            set: {sWeight = $0.filter{"0123456789.".contains($0)}}))
                     .padding(10)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 
@@ -138,6 +131,7 @@ struct WeightManagementView: View {
                     newItem.timeStamp = val
                     
                     try? viewContext.save()
+                    
                 }, label: {
                     Text("登録")
                         .padding(8)
@@ -163,19 +157,100 @@ struct WeightManagementView: View {
     }
 }
 
-struct LineChart : UIViewRepresentable {
+struct LineChart : UIViewRepresentable{
+    
+    /// データ取得処理
+    @FetchRequest(
+        entity: Item.entity(),
+        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timeStamp, ascending: true)],
+            predicate: nil
+    ) private var items: FetchedResults<Item>
+
+    static var temps:[Double] = []
+    
+    func createData() -> Bool {
+        var ret: Bool = false
+        var tmpData: Date = Date()
+        LineChart.temps.removeAll()
+        print("[LineChart] createData() items.count: \(items.count)")
+        for count in (0..<items.count){
+            LineChart.temps.append(Double(items[count].weight))
+            tmpData = items[count].timeStamp! + 86400
+            if(count < items.count - 1) {
+                while tmpData < items[count + 1].timeStamp! {
+                    LineChart.temps.append(Double(items[count].weight))
+                    tmpData += 86400
+                }
+            }
+            ret = true
+        }
+        print("[LineChart] temps: \(LineChart.temps)")
+        
+        return ret
+    }
     
     typealias UIViewType = LineChartView
  
     func makeUIView(context: Context) -> LineChartView {
         let lineChartView = LineChartView()
+        
+        if(!createData()) {
+            return lineChartView
+        }
+        
+        lineChartView.data = setData()
+        
+        lineChartView.rightAxis.enabled = false //右側のX軸非表示
+        
+        //X軸表示の設定
+        let xAxis = lineChartView.xAxis // lineChartView.xAxisを変数で定義
+        xAxis.labelPosition = .bottom //X軸単位のポジション(下部に表示)
+        xAxis.granularity = 1.0 //X軸の表示単位を1.0ごとにする
+                
+        let formatter = DateValueFormatter(startDate: items[0].timeStamp!)
+        xAxis.valueFormatter = formatter
+        
         return lineChartView
     }
     
     func updateUIView(_ uiView: LineChartView, context: Context) {
  
     }
+    
+    func setData() -> LineChartData{
+        
+        let dataPoint = getDataPoints(accuracy: LineChart.temps)
+        
+        let set = LineChartDataSet(entries: dataPoint, label: "My data")
+        let data = LineChartData(dataSet: set)
+            
+        return data
+    }
  
+    func getDataPoints(accuracy: [Double]) -> [ChartDataEntry] {
+        var dataPoints: [ChartDataEntry] = []
+        
+        for count in (0..<accuracy.count) {
+            dataPoints.append(ChartDataEntry(x: Double(count), y: accuracy[count]))
+        }
+        return dataPoints
+    }
+}
+
+class DateValueFormatter: NSObject, IAxisValueFormatter {
+ 
+    let dateFormatter = DateFormatter()
+    var startDate:Date
+ 
+    init(startDate:Date) {
+        self.startDate = startDate
+    }
+ 
+    public func stringForValue(_ value: Double, axis: AxisBase?) -> String {
+        let modifiedDate = Calendar.current.date(byAdding: .day, value: Int(value), to: startDate )!
+        dateFormatter.dateFormat = "M/d"
+        return dateFormatter.string(from: modifiedDate)
+    }
 }
 
 struct ContentView: View {
